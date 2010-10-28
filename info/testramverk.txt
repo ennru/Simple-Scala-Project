@@ -1,4 +1,4 @@
-Olika exempletestfall finns under src/test/scala
+Olika exempeltestfall finns under src/test/scala
 
 JUnit 4.8.2
 http://junit.org/
