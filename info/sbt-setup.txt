@@ -1,0 +1,18 @@
+SBT finns med under script/
+
+Unix: 
+i projektbiblioteket
+chmod u+x script/sbt.sh
+
+testa med
+script/sbt.sh
+
+viktiga kommandon (completion finns):
+update
+quit
+clean
+test
+compile
+~ compile
+console
+se Šven http://code.google.com/p/simple-build-tool/wiki/RunningSbt
