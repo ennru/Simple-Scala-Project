@@ -12,7 +12,6 @@ tags
 TAGS
 reports
 dist
-build
 bin
 target
 deploy/*.jar
