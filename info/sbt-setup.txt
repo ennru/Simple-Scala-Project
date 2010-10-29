@@ -5,7 +5,14 @@ i projektbiblioteket
 chmod u+x script/sbt.sh
 
 testa med
-script/sbt.sh
+script/sbt.sh update test
+
+Vill du šppna projektet i 
+- Eclipse
+     script/sbt.sh eclipse
+- Idea
+     script/sbt.sh idea
+annars se http://code.google.com/p/simple-build-tool/wiki/IntegrationSupport
 
 viktiga kommandon (completion finns):
 update
