@@ -43,3 +43,4 @@ run-codefellow
 .scala_dependencies
 multiverse.log
 .eprj
+/lib
