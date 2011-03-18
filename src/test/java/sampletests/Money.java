@@ -20,4 +20,16 @@ public class Money {
     public Money add(Money m) {
         return new Money(amount()+m.amount(), currency());
     }
+
+    @Override
+    public boolean equals(Object other) {
+	if (this == other) return true;
+	if (other instanceof Money) {
+	    Money that = (Money) other;
+	    return this.fAmount == that.fAmount && 
+		this.fCurrency == that.fCurrency;
+	}
+	return false;
+    }
+
 }
