@@ -1,4 +1,10 @@
 Simple Scala Project
-Enno Runne, 2010-10-27
+Enno Runne, 2011-07-01
 
 Contains SBT and some sample test cases for various Scala test frameworks.
+
+To import the project to Eclipse, you may use the plug-in sbteclipse 
+https://github.com/typesafehub/sbteclipse
+
+To import the project to IntelliJ IDEA, you may use the plug-in sbt-idea 
+https://github.com/mpeltonen/sbt-idea/tree/sbt-0.10

@@ -7,13 +7,6 @@ chmod u+x script/sbt.sh
 testa med
 script/sbt.sh update test
 
-Vill du šppna projektet i 
-- Eclipse
-     script/sbt.sh eclipse
-- Idea
-     script/sbt.sh idea
-annars se http://code.google.com/p/simple-build-tool/wiki/IntegrationSupport
-
 viktiga kommandon (completion finns):
 update
 quit
@@ -22,4 +15,4 @@ test
 compile
 ~ compile
 console
-se Šven http://code.google.com/p/simple-build-tool/wiki/RunningSbt
+se ï¿½ven https://github.com/harrah/xsbt/wiki/Running
