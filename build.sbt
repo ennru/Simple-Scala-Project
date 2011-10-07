@@ -9,3 +9,6 @@ libraryDependencies ++= Seq(
 	"org.specs2" %% "specs2" % "1.6" % "test",
 	"org.scalatest" %% "scalatest" % "1.6.1" % "test"
 )
+
+// set up Cucumber plugin
+seq(cucumberSettings : _*)
