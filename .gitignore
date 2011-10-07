@@ -41,6 +41,7 @@ run-codefellow
 .classpath
 .idea
 .scala_dependencies
+.target
 multiverse.log
 .eprj
 /lib

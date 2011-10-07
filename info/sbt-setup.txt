@@ -1,4 +1,4 @@
-SBT finns med under script/
+SBT 0.11.0 finns med under script/
 
 Unix: 
 i projektbiblioteket
@@ -15,4 +15,18 @@ test
 compile
 ~ compile
 console
-se ï¿½ven https://github.com/harrah/xsbt/wiki/Running
+se aven https://github.com/harrah/xsbt/wiki/Running
+
+
+
+Skapa projektfiler fšr Eclipse
+sbt eclipse
+
+importerar sedan projektet
+
+
+
+Skapa projektfiler fšr IDEA
+https://github.com/mpeltonen/sbt-idea
+
+sbt 

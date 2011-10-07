@@ -3,9 +3,9 @@ Olika exempeltestfall finns under src/test/scala
 JUnit 4.8.2
 http://junit.org/
 
-ScalaTest 1.6.1
+ScalaTest
 http://scalatest.org/
 
-Specs2 1.4
+Specs2
 http://etorreborre.github.com/specs2/
 http://etorreborre.github.com/specs2/guide/org.specs2.guide.QuickStart.html
