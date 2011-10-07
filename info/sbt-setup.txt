@@ -1,13 +1,13 @@
-SBT 0.11.0 finns med under script/
+SBT 0.11.0 is added in this project
 
-Unix: 
-i projektbiblioteket
-chmod u+x script/sbt.sh
+try everything by running
+./script/sbt.sh update test
 
-testa med
-script/sbt.sh update test
+enter the sbt console with
+./script/sbt.sh
 
-viktiga kommandon (completion finns):
+important commads are
+
 update
 quit
 clean
@@ -15,18 +15,5 @@ test
 compile
 ~ compile
 console
-se aven https://github.com/harrah/xsbt/wiki/Running
 
-
-
-Skapa projektfiler fšr Eclipse
-sbt eclipse
-
-importerar sedan projektet
-
-
-
-Skapa projektfiler fšr IDEA
-https://github.com/mpeltonen/sbt-idea
-
-sbt 
+see also https://github.com/harrah/xsbt/wiki/Running

@@ -1,4 +1,4 @@
-Olika exempeltestfall finns under src/test/scala
+Pre-configured testing frameworks
 
 JUnit 4.8.2
 http://junit.org/
