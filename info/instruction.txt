@@ -1,0 +1,20 @@
+The Code Breaker kata
+
+The secret contains 4 colours out of green, blue, cyan, red and yellow.
+In the simple setup, repititions of the same colour are not allowed.
+
+The secret is written as string with a letter for each colour separated with space (e.g. "r g b y").
+
+For a guess in the same format, the solution should return a string with a 
+'p' for every match of colour and position, and a
+'m' for every other colour contained in the secret.
+
+For more details see http://en.wikipedia.org/wiki/Mastermind_%28board_game%29
+
+See features/CodeBreaker.feature for the acceptance tests.
+To run the acceptance tests, uncomment the assert in test CodeBreakerSteps and run Cucumber
+by using "cucumber" in the sbt shell.
+
+
+Another challenge is to allow douplets in secret and guess. The features directory contains
+a Cucumber specification for that. Rename the file to make Cucumber run it, as well.
