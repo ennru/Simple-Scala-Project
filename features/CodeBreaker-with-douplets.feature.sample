@@ -1,0 +1,28 @@
+Feature: Marking a guess
+  In order to get more information about the secret code which may contain a color more than once
+  As a code breaker
+  I would like to see marks for my guess
+
+  Background:
+    Given the secret "b b r r"
+
+  Scenario Outline: Lots of tests
+    When I guess "<guess>"
+    Then I should get "<mark>"
+
+  Examples:
+    |guess   |mark    |
+    |c c c c |        |
+    |r c c c |m       |
+    |c r c c |m       |
+    |c c r c |p       |
+    |c c c r |p       |
+    |r r c c |m m     |
+    |r r b b |m m m m |
+    |c r r c |p m     |
+    |c c r r |p p     |
+    |b c r r |p p p   |
+    |r r c r |p m     |
+    |r b b r |p p m m |
+    |b b r r |p p p p |
+    
