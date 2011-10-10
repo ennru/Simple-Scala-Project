@@ -1,3 +1,6 @@
 The Mine Sweeper kata
 
 http://codingdojo.org/cgi-bin/wiki.pl?KataMinesweeper
+
+I slightly changed the requirements to understand the field size by the multi-line string input
+instead of a field size in the first line.
