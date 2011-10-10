@@ -1,0 +1,10 @@
+The Game Of Life kata
+
+http://codingdojo.org/cgi-bin/wiki.pl?KataGameOfLife
+
+This project contains a Swing app which can animate the developing generations.
+The contract for the Swing app is defined in gameoflife.Game.
+
+
+Thanks to James Carr for the nice GUI.
+http://blog.james-carr.org/2010/09/29/friday-scala-kata-conways-game-of-life/
