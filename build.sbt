@@ -2,12 +2,17 @@ name := "Simple-Scala-Project"
 
 version := "1.0"
 
-scalaVersion := "2.9.1"
+scalaVersion := "2.11.8"
 
 libraryDependencies ++= Seq(
-	"org.scala-lang" % "scala-swing" % "2.9.1",
-	"junit" % "junit" % "4.8.2" % "test",
-	"com.novocode" % "junit-interface" % "0.7" % "test",
-	"org.specs2" %% "specs2" % "1.6" % "test",
-	"org.scalatest" %% "scalatest" % "1.6.1" % "test"
+	"org.scala-lang" % "scala-swing" % "2.11.8",
+	"junit" % "junit" % "4.12" % "test",
+	"com.novocode" % "junit-interface" % "0.11" % "test",
+	"org.specs2" %% "specs2-core" % "3.8.4" % "test",
+	"org.scalatest" %% "scalatest" % "3.0.0" % "test"
 )
+
+// resolvers += "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
+
+// resolvers += "Typesafe Artifactory" at "http://repo.typesafe.com/typesafe"
+
