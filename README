@@ -9,3 +9,4 @@ run './script/sbt.sh eclipse'
 see https://github.com/typesafehub/sbteclipse
 
 To import the project to IntelliJ IDEA, choose File, Open... and point to the file build.sbt
+#hi
