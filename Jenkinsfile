@@ -10,7 +10,7 @@ pipeline{
 		stage('Test'){
 				
 			steps{
-				sh "sbt test"
+				sh "sbt test:test"
 			       }
 		              
 		              }
