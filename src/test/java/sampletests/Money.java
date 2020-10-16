@@ -2,7 +2,7 @@ package sampletests;
 
 public class Money {
     private int fAmount;
-    private String fCurrency
+    private String fCurrency;
 
     public Money(int amount, String currency) {
         fAmount= amount;
