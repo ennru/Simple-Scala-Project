@@ -16,18 +16,19 @@ pipeline{
 		              }
 		
 		
-		//stage('build image'){
-				
-			//steps{
-			//      sh " docker build -t dockerimage ."
-			       //}
-		              
-		             // }
 			      
 	        stage('package'){
 				
 			steps{
 				sh "sbt package"
+			       }
+		              
+		              }
+		
+		stage('build image'){
+				
+			steps{
+			     sh " docker build -t dockerimage ."
 			       }
 		              
 		              }
