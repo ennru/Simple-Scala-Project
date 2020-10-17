@@ -41,7 +41,7 @@ pipeline{
 				    sh "docker login -u himanshu1018 -p ${DOCKER_HUB_CREDENTIALS}"
                                                                                                          }
 				
-				sh " docker push himanshu1018/dockerimage:v1"
+				sh " docker push himanshu1018/capstone-project"
 			       }
 		              
 		              }
