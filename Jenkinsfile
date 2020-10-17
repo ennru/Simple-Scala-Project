@@ -32,6 +32,19 @@ pipeline{
 			       }
 		              
 		              }
+		
+		stage('push image'){
+				
+			steps{
+			    withCredentials([string(credentialsId: 'DOCKER_HUB_CREDENTIALS', variable: 'DOCKER_HUB_CREDENTIALS')]) {
+    // some block
+				    sh "docker login -u himanshu1018 -p ${DOCKER_HUB_CREDENTIALS}"
+                                                                                                         }
+				
+				sh " docker push himanshu1018/dockerimage:v1"
+			       }
+		              
+		              }
 		}
     }
     
