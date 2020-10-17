@@ -28,7 +28,7 @@ pipeline{
 		stage('build image'){
 				
 			steps{
-			     sh " docker build -t dockerimage ."
+			     sh " docker build -t  himanshu1018/capstone-project ."
 			       }
 		              
 		              }
