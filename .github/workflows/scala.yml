@@ -54,7 +54,7 @@ jobs:
            aws-region           : ${{ env.AWS_REGION_NAME }}
 
       - name: Copy our Deployment package to S3 bucket
-        run : aws s3 cp codedeploy.zip s3://github-actions19/p3-codedeploy.zip
+        run : aws s3 cp codedeploy.zip s3://github-actions10/p3-codedeploy.zip
                 
          
       - name: Print nice message on completion of CI Pipeline
