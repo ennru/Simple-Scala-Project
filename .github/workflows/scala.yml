@@ -46,10 +46,10 @@ jobs:
         run: zip -r codedeploy.zip *
       - name: Configure my AWS Credentils
         uses: aws-actions/configure-aws-credentials@v1
-           with:
-             aws-access-key-id    : ${{ secrets.MY_AWS_ACCESS_KEY }}
-             aws-secret-access-key: ${{ secrets.MY_AWS_SECRET_KEY }}
-             aws-region           : ${{ env.AWS_REGION_NAME }}
+        with:
+           aws-access-key-id    : ${{ secrets.MY_AWS_ACCESS_KEY }}
+           aws-secret-access-key: ${{ secrets.MY_AWS_SECRET_KEY }}
+           aws-region           : ${{ env.AWS_REGION_NAME }}
 
          - name: Copy our Deployment package to S3 bucket
            run : aws s3 cp codedeploy.zip s3://github-actions19/p3-codedeploy.zip
