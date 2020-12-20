@@ -51,9 +51,9 @@ jobs:
            aws-secret-access-key: ${{ secrets.MY_AWS_SECRET_KEY }}
            aws-region           : ${{ env.AWS_REGION_NAME }}
 
-         - name: Copy our Deployment package to S3 bucket
-           run : aws s3 cp codedeploy.zip s3://github-actions19/p3-codedeploy.zip
+      - name: Copy our Deployment package to S3 bucket
+        run : aws s3 cp codedeploy.zip s3://github-actions19/p3-codedeploy.zip
                 
          
-         - name: Print nice message on completion of CI Pipeline
-           run : echo "CI Pipeline part finished successfully"
+      - name: Print nice message on completion of CI Pipeline
+        run : echo "CI Pipeline part finished successfully"
