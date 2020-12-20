@@ -37,7 +37,7 @@ jobs:
         run: |
           mkdir -p codedeploy
       - name: echo
-        run: sh "pwd"
+        run: pwd
       - name: Copy Artifacts To Codedeploy
         run: cp /home/runner/work/Simple-Scala-Project/Simple-Scala-Project/target/universal/simple-scala-project-1.0.zip codedeploy/simple-scala-project-1.0.zip
       - name: Unzip the zip folder
