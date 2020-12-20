@@ -1,5 +1,10 @@
 name: Scala CI
-
+env:
+  EB_PACKAGE_S3_BUCKET_NAME : "github-actions-10"
+  EB_APPLICATION_NAME       : "Scala"
+  EB_ENVIRONMENT_NAME       : "MyFlask-env"
+  DEPLOY_PACKAGE_NAME       : "flask-app-${{ github.sha }}.zip"
+  AWS_REGION_NAME           : "us-east-2"
 on:
   push:
     branches: [ master ]
@@ -31,3 +36,24 @@ jobs:
       - name: Make Directory
         run: |
           mkdir -p codedeploy
+      - name: Copy Artifacts To Codedeploy
+        run: cp Simple-Scala-Project/target/universal/simple-scala-project-1.0.zip codedeploy/simple-scala-project-1.0.zip
+      - name: Unzip the zip folder
+        run: unzip codedeploy/simple-scala-project-1.0.zip -d codedeploy/
+      - name: Deleting zip folder
+        run: rm codedeploy/simple-scala-project-1.0.zip
+      - name: creating zip folder
+        run: zip -r codedeploy.zip *
+      - name: Configure my AWS Credentils
+        uses: aws-actions/configure-aws-credentials@v1
+           with:
+             aws-access-key-id    : ${{ secrets.MY_AWS_ACCESS_KEY }}
+             aws-secret-access-key: ${{ secrets.MY_AWS_SECRET_KEY }}
+             aws-region           : ${{ env.AWS_REGION_NAME }}
+
+         - name: Copy our Deployment package to S3 bucket
+           run : aws s3 cp codedeploy.zip s3://github-actions19/p3-codedeploy.zip
+                
+         
+         - name: Print nice message on completion of CI Pipeline
+           run : echo "CI Pipeline part finished successfully"
