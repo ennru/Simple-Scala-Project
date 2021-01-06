@@ -1,0 +1,25 @@
+name: Scala CI
+env:
+  EB_PACKAGE_S3_BUCKET_NAME : "github-actions-10"
+  EB_APPLICATION_NAME       : "Scala"
+  EB_ENVIRONMENT_NAME       : "MyFlask-env"
+  DEPLOY_PACKAGE_NAME       : "flask-app-${{ github.sha }}.zip"
+  AWS_REGION_NAME           : "us-east-2"
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+  # Show how to print unmasked GitHub secrets to the console
+  - name: Step 1 - Echo out a GitHub Actions Secret to the logs
+    run: |
+      echo "The GitHub Action Secret will be masked:  "
+      echo ${{ secrets.MY_AWS_SECRET_KEY }}
+      echo "Trick to echo GitHub Actions Secret:  "
+      echo ${{secrets.MY_AWS_SECRET_KEY}} | sed 's/./& /g'
