@@ -8,10 +8,10 @@ env:
 on:
   push:
     branches: 
-      - tokens
+      - token
   pull_request:
     branches: 
-      - tokens
+      - token
 
 jobs:
   build:
