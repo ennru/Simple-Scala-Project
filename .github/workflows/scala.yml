@@ -8,10 +8,10 @@ env:
 on:
   push:
     branches: 
-      - githubactions
+      - tokens
   pull_request:
     branches: 
-      - githubactions
+      - tokens
 
 jobs:
   build:
